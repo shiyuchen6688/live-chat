@@ -1,0 +1,277 @@
+:root {
+  /* colors */
+  --clr-text: #f1f1f1;
+  --clr-background: #1a1a1d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Join */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  height: 100vh;
+}
+
+.joinContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-color: var(--clr-background);
+}
+
+.joinInnerContainer {
+  width: 30%;
+  height: auto;
+  border: 0.25em solid white;
+}
+
+.joinInput {
+  border-radius: 1em;
+  margin: 1em 0em;
+  padding: 15px;
+  width: 100%;
+}
+
+.heading {
+  color: white;
+  font-size: 2.5em;
+  padding: 10px 0px;
+}
+
+.button {
+  color: #fff;
+  text-transform: uppercase;
+  background: #707070;
+  border-radius: 1em;
+  padding: 10px;
+  display: inline-block;
+  margin: 1em 0em 0em 0em;
+  width: 90%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+}
+
+button:hover {
+  background: #808080;
+}
+
+/* Chat */
+.chatContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1d;
+}
+
+.chatInnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 8px;
+  height: 60%;
+  width: 60%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .outerContainer {
+    height: 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+}
+
+/* InfoBar */
+.InfoBarcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #808080;
+  border-radius: 4px 4px 0 0;
+  height: 60px;
+  width: 100%;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  color: white;
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.onlineIcon {
+  margin-right: 5%;
+}
+
+/* Input */
+.messageForm {
+  display: flex;
+  border-top: 2px solid #d3d3d3;
+}
+
+.chatInput {
+  border-radius: 0.5em;
+  padding: 1rem;
+  width: 80%;
+  align-items: flex-start;
+  font-size: 1.2em;
+}
+
+.chatButton {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #707070;
+  padding: 4%;
+  border-radius: 0.5em;
+  display: inline-block;
+  border: none;
+  width: 20%;
+}
+
+/* ChatRecord */
+.chatRecord {
+  padding: 5% 0;
+  overflow: auto; /* scroll when content don't fit */
+  flex: auto;
+  width: 100%;
+}
+
+/* Message */
+.messageContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 5%;
+  margin-top: 3px;
+}
+
+.messageBox {
+  background: #f3f3f3;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: white;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.messageContent {
+  width: 100%;
+  letter-spacing: 0;
+  float: left;
+  font-size: 1.1em;
+  word-wrap: break-word;
+}
+
+.messageContent img {
+  vertical-align: middle;
+}
+
+.messageSender {
+  display: flex;
+  align-items: center;
+  font-family: Helvetica;
+  color: #828282;
+  letter-spacing: 0.3px;
+}
+
+.otherMessageSender {
+  padding-left: 10px;
+}
+
+.myMessageSender {
+  padding-right: 10px;
+}
+
+.otherMessageContainer {
+  justify-content: flex-start;
+}
+
+.myMessageContainer {
+  justify-content: flex-end;
+}
+
+.myMessageContent {
+  color: white;
+}
+
+.otherMessageContent {
+  color: #353535;
+}
+
+.myMessage {
+  background: #2979ff;
+}
+
+.otherMessage {
+  background: #f3f3f3;
+}
+
+/* Notification */
+.notificationContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  color: white;
+  height: 60%;
+  justify-content: space-between;
+}
+
+.listOfUserInRoomContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50%;
+}
+
+.userInRoom {
+  display: flex;
+  align-items: center;
+}
+
+/* .activeContainer img {
+  padding-left: 10px;
+}
+
+.textContainer h1 {
+  margin-bottom: 0px;
+} */
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  .textContainer {
+    display: none;
+  }
+}
