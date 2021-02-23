@@ -6,6 +6,6 @@ Live chatting web application that allow real time message transfer
 - Node (express, socket.io ...)
 - React
 
-## Deploment:
+## Deployment:
 - Backend: Heroku
 - Frontend: Netlify
