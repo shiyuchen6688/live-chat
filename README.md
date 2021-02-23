@@ -9,3 +9,5 @@ Live chatting web application that allow real time message transfer
 ## Deployment:
 - Backend: Heroku
 - Frontend: Netlify
+
+Web application Address: https://live-chat-room.netlify.app
